@@ -1,3 +1,26 @@
+Homework 09: Automating Data-analysis Pipelines
+=============
+This assignment is built on [this repository.](https://github.com/STAT545-UBC/make-activity)
+
+For this assignment, I added two R functions to count the number of words which start or end with English letters. And each function will generate one plot for that function. The plots are added into both the existing pipeline and the R and Rmd files. I still kept the orginal pipeline. You can run `make all clean` in the home folder on the terminal or comman prompt. 
+
+Document | Content
+--------- | --------
+[startLetter.R](https://github.com/STAT545-UBC-students/hw09-Mengsuper/blob/master/startLetter.R) | R file for counting start letters
+[endLetter.R](https://github.com/STAT545-UBC-students/hw09-Mengsuper/blob/master/endLetter.R) | R file for counting start letters
+[report.md](https://github.com/STAT545-UBC-students/hw09-Mengsuper/blob/master/report.md) | report document
+[report.Rmd](https://github.com/STAT545-UBC-students/hw09-Mengsuper/blob/master/report.rmd) | report source file. 
+
+I added some folders (data, plots) to the project for better structure. In order to better visualize the workflow, I used the [makefile2dot](https://github.com/vak/makefile2dot) to create a graph of the pipeline. 
+
+![](pipeline.png)
+
+The plot for number of words starting with English letters. 
+![](plots/startLetter.png)
+
+The plot for nubmer of words ending with English letters. 
+![](plots/endLetter.png)
+
 make-activity
 =============
 
